@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fe3745;
+}
+
+.box {
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box .text-input {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-height: 200px;
+  padding: 10px 15px;
+  font-family: inherit;
+}
+.box .text-input, .box .text-input:focus, .box .text-input:hover {
+  outline: none;
+}
+.box .copy-btn {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  background-color: #020e08;
+  border-radius: 5px;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.box .copy-btn:hover {
+  color: #fe3745;
+}
+
+@media screen and (max-width: 550px) {
+  .box {
+    width: 90%;
+  }
+}
